@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Tic Tac Toe game By Arjun Chauhan" />
+    <title>TicTacToe By Arjun</title>
+    <link rel="stylesheet" href="Tic Tac Toe.css" />
+  </head>
+  <body>
+    <div id="body">
+      <nav class="nav">
+        <h3 id="nav-h3">Welcome to Tic Tac Toe</h3>
+      </nav>
+      <div class="gameInfo">
+        <div class="info">
+          <span class="info1">Turn for X </span>
+        </div>
+      </div>
+      <div class="container" >
+        <div class="gameContainer" id="blocking">
+          <div class="border bt bl">
+            <span class="boxtext" id="not"></span>
+          </div>
+          <div class="border bt">
+            <span class="boxtext" id="not"></span>
+          </div>
+          <div class="border bt br">
+            <span class="boxtext" id="not"></span>
+          </div>
+          <div class="border bl">
+            <span class="boxtext" id="not"></span>
+          </div>
+          <div class="border">
+            <span class="boxtext" id="not"></span>
+          </div>
+          <div class="border br">
+            <span class="boxtext" id="not"></span>
+          </div>
+          <div class="border bb bl">
+            <span class="boxtext" id="not"></span>
+          </div>
+          <div class="border bb">
+            <span class="boxtext" id="not"></span>
+          </div>
+          <div class="border bb br">
+            <span class="boxtext" id="not"></span>
+          </div>
+        </div>
+        <div class="blocking" id="playagain">
+          <button id="btn" onclick="{reset()}"></button>
+        </div>
+      </div>
+      <div class="reset-btn">
+        <button class="reset" onclick="{reset()}">Reset</button>
+      </div>
+      <div id="instruction">
+        <h3>Instruction for tic tac toe :--</h3>
+        <ul id="ul">
+          <li id="li">
+            The game is played on a grid that's 3 squares by 3 squares.
+          </li>
+          <li id="li">
+            You are X, your friend is O. Players take turns putting their marks
+            in empty squares.
+          </li>
+          <li id="li">
+            The first player to get 3 of her marks in a row (up, down, across,
+            or diagonally) is the winner.
+          </li>
+          <li id="li">When all 9 squares are full, the game is over.</li>
+        </ul>
+      </div>
+      <div class="footer">
+        <h3 id="h3">
+          © <span id="span"></span>
+          <a href="https://arjunchauhan.netlify.app/"
+            >ARJUN CHAUHAN</a
+          >
+        </h3>
+      </div>
+    </div>
+    <script src="Tic Tac Toe.js"></script>
+  </body>
+</html>
